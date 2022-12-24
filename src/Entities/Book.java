@@ -1,3 +1,5 @@
+package Entities;
+
 public class Book {
     private String bookId;
     private String title;
@@ -9,20 +11,11 @@ public class Book {
 
     }
 
-    public Book(String bookId, String title, String author, int copies){
-        this.bookId = bookId;
+    public Book(String title, String author, int copies){
         this.title = title;
         this.author = author;
         this.copies = copies;
 
-    }
-
-    public String getBookId() {
-        return bookId;
-    }
-
-    public void setBookId(String bookId) {
-        this.bookId = bookId;
     }
 
     public String getTitle() {
@@ -51,12 +44,10 @@ public class Book {
 
     @Override
     public String toString(){
-        return "Book{" +
-                "BookId='" + bookId + '\'' +
+        return "Entities.Book{" +
                 ", Title='" + title + '\'' +
                 ", Author='" + author + '\'' +
                 ", Copies='" + copies + '\'' +
-                ", Availability='" + availableStatus + '\'' +
                 '}';
 
     }
